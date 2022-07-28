@@ -1,15 +1,6 @@
-const CONTRACT_NAME = process.env.CONTRACT_NAME || 'nft.uniauction.testnet';
-const MARKET_CONTRACT_NAME = process.env.MARKET_CONTRACT_NAME || 'market.uniauction.testnet';
-//nft_contract.bloknear.testnet
-//market_contract.nearauct.testnet
+const CONTRACT_NAME = process.env.CONTRACT_NAME || 'NFT-CONTRACT_NAME';
+const MARKET_CONTRACT_NAME = process.env.MARKET_CONTRACT_NAME || 'MARKET-CONTRACT-NAME';
 
-//market_contract.uninear.testnet
-
-//nft-contract.boomboom.testnet
-//market_contract.boomboom.testnet
-
-//nft-contract.unicus.testnet
-//market_contract.unicus.testnet
 
 function getConfig(env) {
   switch(env) {
