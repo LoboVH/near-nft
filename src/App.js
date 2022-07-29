@@ -98,7 +98,7 @@ const App = ({ currentUser, nearConfig, walletConnection }) => {
       .account()
       .viewFunction(
         nearConfig.marketContractName,
-        "get_sales_by_nft_contract_id",
+        "get_auctions_by_nft_contract_id",
         {
           nft_contract_id: nearConfig.contractName,
           from_index: "0",
@@ -206,7 +206,7 @@ const App = ({ currentUser, nearConfig, walletConnection }) => {
     };
     await walletConnection.account().functionCall({
       contractId: nearConfig.contractName,
-      methodName: "nft_approve",
+      methodName: "approve_nft_auction", 
       args: {
         token_id: token_id,
         account_id: nearConfig.marketContractName,
